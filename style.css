@@ -1,0 +1,264 @@
+
+:root {
+    --color-principal: #0d6efd;
+    --color-secundario: #6610f2;
+    --color-fondo: #f5f7fb;
+    --color-texto: #212529;
+    --color-blanco: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+    line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+section {
+    scroll-margin-top: 70px;
+}
+
+/*NAVEGACIÓN*/
+.navbar {
+    padding: 15px 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+.navbar-brand:hover {
+    color: var(--color-secundario);
+}
+.nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-principal);
+}
+
+/*SECCIÓN INICIO*/
+
+.seccion1 {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #eaf2ff,
+        #f4edff
+    );
+    padding: 80px 0;
+}
+.hero-contenido {
+    max-width: 750px;
+}
+.hero-contenido h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #172554;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hero-contenido p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+    max-width: 650px;
+}
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+}
+.btn-primary:hover {
+    background-color: #084298;
+    border-color: #084298;
+    transform: translateY(-2px);
+}
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+/*SECCIÓN SERVICIOS*/
+.seccion2 {
+    padding: 70px 0;
+    background-color: var(--color-blanco);
+}
+.seccion2 h2,
+.seccion3 h2 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+.seccion2 .text-center p {
+    color: #666;
+    margin-bottom: 30px;
+}
+.servicio-card {
+    height: 100%;
+    overflow: hidden;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--color-blanco);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.servicio-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13);
+}
+.servicio-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+.servicio-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+}
+.servicio-card .card-title {
+    color: #172554;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.servicio-card .card-text {
+    color: #666;
+    margin-bottom: 20px;
+}
+.servicio-card .btn {
+    margin-top: auto;
+}
+
+/*SECCIÓN CONTACTO*/
+.seccion3 {
+    padding: 70px 0;
+    background-color: var(--color-fondo);
+}
+.seccion3 .contenido {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+.seccion3 .contenido p {
+    color: #666;
+}
+.pasos {
+    padding-left: 22px;
+    margin-top: 20px;
+}
+.pasos li {
+    margin-bottom: 8px;
+}
+
+/*FORMULARIO*/
+.seccion3 form {
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+.form-label {
+    font-weight: 600;
+    color: #343a40;
+}
+.form-control {
+    min-height: 45px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+.form-control:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+.form-check {
+    margin-top: 5px;
+}
+.form-check-input {
+    cursor: pointer;
+}
+.form-check-label {
+    cursor: pointer;
+}
+#mensajeFormulario {
+    display: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/*PIE DE PÁGINA*/
+footer {
+    padding: 25px 15px !important;
+    color: #555;
+    background-color: #e9edf5 !important;
+    font-size: 0.95rem;
+}
+
+/*DISEÑO RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 4%;
+    }
+    .seccion1 {
+        min-height: auto;
+        padding: 60px 0;
+    }
+    .hero-contenido h1 {
+        font-size: 2.2rem;
+    }
+    .hero-contenido p {
+        font-size: 1rem;
+    }
+    .seccion2,
+    .seccion3 {
+        padding: 45px 0;
+    }
+    .seccion3 form {
+        padding: 20px;
+    }
+
+    .servicio-card img {
+        height: 190px;
+    }
+}
+@media (max-width: 480px) {
+    .hero-contenido h1 {
+        font-size: 1.8rem;
+    }
+    .botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .botones .btn {
+        width: 100%;
+    }
+    .seccion3 form {
+        padding: 16px;
+    }
+}

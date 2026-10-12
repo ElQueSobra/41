@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Digital</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Institudo Digital</a>
+          <button class="navbar-toggler" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarTogglerDemo02" 
+            aria-controls="navbarTogglerDemo02" 
+            aria-expanded="false" aria-label="Abrir navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicio">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <!--CONTENIDO-->
+    <main>
+        <!--SECCION INICIO-->
+        <section id="inicio" class="seccion1 py-5">
+            <div class="container">
+                <div class="hero-contenido">
+                    <h1>
+                        Forma tu futuro con educación de calidad
+                    </h1>
+                    <p>
+                        Aprende nuevas habilidades y desarrolla tu talento
+                        con nuestros programas académicos para impulsar tu
+                        desarrollo profesional y personal.
+                    </p>
+                    <div class="botones">
+                        <a href="#servicio" class="btn btn-primary">
+                            Ver programas
+                        </a>
+                        <a href="#contacto" class="btn btn-secondary">
+                            Quiero información
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SERVICIO ACADEMICO-Bootstrap-->
+        <section id="servicio" class="seccion2 py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2>Nuestros servicios académicos</h2>
+                    <p>Encuentra la opción de formación que necesitas.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- SERVICIO 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card servicio-card">
+                            <img src="https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1325174870.jpg?resize=1200,675" 
+                            class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Desarrollo de Software</h5>
+                                <p class="card-text">Programación, bases de datos 
+                                y desarrollo web con proyectos reales.</p>
+                                <a href="#contacto" class="btn btn-primary">Elegir este programa</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- SERVICIO 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card servicio-card">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/038/940/910/small/ai-generated-modern-graphic-design-workspace-with-dual-screens-photo.jpeg" 
+                            class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Diseño Gráfico Digital</h5>
+                                <p class="card-text">Identidad visual, edición y 
+                                diseño para medios digitales e impresos.</p>
+                                <a href="#contacto" class="btn btn-primary">Elegir este programa</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- SERVICIO 3 -->
+                     <div class="col-md-6 col-lg-4">
+                        <article class="card servicio-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFmXyxshPnDEQGfjhE2g0lewzvQ24oIovCBA3gusdm4-lOXwr5Di1F0LiE&s=10" 
+                            class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Redes y Comunicaciones</h5>
+                                <p class="card-text">Instalación, configuración y 
+                                seguridad de redes en laboratorio.</p>
+                                <a href="#contacto" class="btn btn-primary">Elegir este programa</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CONTACTO Y REGISTRO-->
+        <section id="contacto" class="seccion3 py-5">
+            <div class="container">
+                <div class="contenido mb-4">
+                    <h2>Regístrate y recibe información</h2>
+                    <p>
+                        Completa el formulario y te contactaremos
+                        en un plazo de 48 horas.
+                    </p>
+                    <ul class="pasos">
+                        <li>Llena tus datos y elige un curso.</li>
+                        <li>Revisa el formulario antes de enviarlo.</li>
+                        <li>Acepta el uso de tus datos para recibir información.</li>
+                    </ul>
+                </div>
+                <!-- FORMULARIO -->
+                <form class="row g-3">
+                    <!-- NOMBRE -->
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre"
+                            name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <!-- APELLIDO -->
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido completo</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido"
+                            placeholder="Escribe tu apellido" required>
+                    </div>
+                    <!-- CORREO ELECTRÓNICO -->
+                    <div class="col-md-6">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo"
+                            name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <!-- FECHA DE NACIMIENTO -->
+                    <div class="col-md-6">
+                        <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fechaNacimiento"
+                            name="fechaNacimiento" required>
+                    </div>
+                    <!-- ACEPTACIÓN DE DATOS -->
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="aceptarDatos"
+                                name="aceptarDatos" required>
+                            <label class="form-check-label" for="aceptarDatos">
+                                Acepto el uso de mis datos para recibir
+                                información.
+                            </label>
+                        </div>
+                    </div>
+                    <!-- BOTÓN DE ENVÍO -->
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">
+                            Enviar registro
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- PIE DE PÁGINA -->
+    <footer class="text-center py-3 bg-body-tertiary">
+        <p class="mb-0">
+            &copy; 2026 Instituto Digital. Todos los derechos reservados.
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
